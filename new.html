@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" >
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" ></script>
+    <script src="./jackmoore-autosize-961af07/jquery.autosize.min.js"></script>
+    <link rel="stylesheet" href="app/main.css">
+    <link rel="stylesheet" href="./fa-4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header" style="vertical-align: middle; padding-left: 15px;">
+                <br/>
+                <a href="home.html" class="navbar-link"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+                <h4 style="display: inline; margin-left: 100px;" class="navbar-text">Add Job / Project</h4>
+            </div>
+          </div>
+    </nav>
+
+    <form>
+        <div class="form-group">
+            <label for="job">Job / Project</label>
+            <select class="form-control" id="job">
+                <option></option>
+                <option>PEP0001</option>
+                <option>PEP0002</option>
+                <option>PEP0002</option>
+            </select>
+        </div>
+        <div class="form-group hidden">
+            <label for="costtype">Cost type</label>
+            <select id="costtype" class="form-control">
+                <option>ARDI</option>
+                <option>RESE</option>
+                <option>RESE</option>
+                <option>RESE</option>
+                <option>RESE</option>
+                <option>RESE</option>
+                <option>ARDI</option>
+                <option>RESE</option>
+                <option>RESE</option>
+                <option>RESE</option>
+                <option>RESE</option>
+                <option>RESE</option>
+                <option>ARDI</option>
+                <option>RESE</option>
+                <option>RESE</option>
+                <option>RESE</option>
+                <option>RESE</option>
+                <option>RESE</option>
+            </select>
+        </div>
+
+        <div class="form-group hidden">
+            <label for="hours">Hours</label>
+            <input type="number" step="0.01" id="hours"/>
+
+            <label id="billable">
+                <input type="checkbox" /> Billable
+            </label>
+            <i class="fa fa-thumb-tack fa-2x pull-right" style="color: #cccccc;"></i>
+        </div>
+
+        <div class="form-group hidden">
+            <label for="notes">Notes</label>
+            <textarea class="form-control" id="notes"></textarea>
+        </div>
+
+            <p>That's all i have so far.</p>
+
+            <p>Next installment, job/project search.</p>
+        <br />
+        <a href="home.html" style="color: #ff0000;">Delete</a>
+        <a class="btn btn-primary pull-right hidden"  href="home.html">Done</a>
+    </form>
+</div>
+<script type="text/javascript">
+
+    $(function() {
+//        console.log( "ready!" );
+
+        $('textarea').autosize();
+    });
+
+</script>
+</body>
+</html>

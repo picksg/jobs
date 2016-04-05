@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Sign in</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="app/main.css">
+    <script src="validator/js/validator.js"></script>
+</head>
+<body style="background-color: #ffffff;">
+
+<div class="container hidden">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4" style="text-align: center">
+            <img src="BCCLogo.png" >
+            <p></p>
+            <p></p>
+            <br>
+        </div>
+    </div>
+    <p></p>
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+            <div class="jumbotron"
+                 style="padding-left: 30px; padding-right: 30px; padding-top: 40px; padding-bottom: 60px;
+                        background-color: #F7F7F7">
+                <p class="text-center" style="margin-bottom: 2px;">Welcome to</p>
+                <p class="text-center"
+                   style="font-size: 24px;color:black; font-weight: bold;"><span style="color:#EC2E12;">BCC </span><span style="font-style: italic">Timesheet</span></p>
+                <span ></span>
+                <form data-toggle="validator" role="form">
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                        <input type="text" data-minlength="5" class="form-control" id="exampleInputEmail3"
+                               placeholder="Enter your userid" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group" >
+                        <label class="sr-only" for="exampleInputPassword3">Password</label>
+                        <input type="password" data-minlength="5" class="form-control has-feedback" id="exampleInputPassword3"
+                               placeholder="Enter your password" data-minlength-error="Password must be at least 5 characters">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-block"
+                            onclick="location.href = 'home.html'">Sign in</button>
+                    <a style="color:#EC2E12; margin-top: 5px;" class="small pull-right" >Need help?</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<div class="container">
+    <!--<h4>2. Enterprise sign in</h4>-->
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4" style="text-align: center">
+            <img src="BCCLogo.png" >
+            <p></p>
+            <p></p>
+            <br>
+        </div>
+    </div>
+    <p></p>
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+            <div class="jumbotron"
+                 style="padding-left: 30px; padding-right: 30px; padding-top: 40px; padding-bottom: 60px;
+                        background-color: #F7F7F7">
+                <p class="text-center" style="margin-bottom: 2px;">Welcome to</p>
+                <p class="text-center"
+                   style="font-size: 24px;color:black; font-weight: bold;"><span style="color:#EC2E12;">BCC </span>
+                    <span style="font-style: italic;font-weight: normal">Timesheet</span></p>
+                <span ></span>
+                <form data-toggle="validator">
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail3a">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail3a"
+                               placeholder="Enter your userid">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputPassword3a">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword3a"
+                               placeholder="Enter your password">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputPassword4">Database</label>
+                        <select class="form-control" id="exampleInputPassword4" style="color:rgba(195, 195, 195, 0.98) font-size: 120%;"
+                                data-minlength="25"
+                                data-minlength-error="You do not have access to this database. Please choose a different one.">
+                            <option  selected>Select your database</option>
+                            <option>database 1</option>
+                            <option>database 2</option>
+                            <option>database 3</option>
+                            <option>database 4</option>
+                        </select>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-block"
+                            onclick="location.href = 'home.html';">Sign in</button>
+                    <a style="color:#EC2E12; margin-top: 5px;" class="small pull-right" >Need help?</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div> <!-- /.container-fluid -->
+
+</body>
+</html>
